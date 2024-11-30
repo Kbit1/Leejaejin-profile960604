@@ -27,3 +27,40 @@ body h1{font-family: 'GmarketSansMedium';}
     }
     100%{transform:translate(0,0) scale(1);}
 }
+
+@media screen and (max-width: 768px) {
+    body h1 {
+        font-size: 1.5rem;
+    }
+
+    .rodding-animation-wrapper {
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .rodding-animation {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rodding-animation:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    .rodding-animation:nth-child(3) {
+        margin-left: 60px;
+    }
+
+    .rodding-animation:nth-child(4) {
+        margin-left: 90px;
+    }
+
+    .rodding-animation:nth-child(5) {
+        margin-left: 120px;
+    }
+
+    .rodding-animation:nth-child(6) {
+        margin-left: 150px;
+    }
+}
