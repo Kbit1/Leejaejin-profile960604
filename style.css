@@ -1,26 +1,28 @@
-/*G마켓 산스 폰트 */
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;}
-/*G마켓 산스 폰트 종료 CDN 형식*/
+/* G마켓 산스 폰트 */
+@font-face{ font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff'); font-weight: normal; font-style: normal;}
+/* G마켓 산스 폰트 종료 */
 
-body{ height: 100vh; display: flex; justify-content: center; align-items: center; background-color: rgb(0, 88, 171); }
+/* button hover 첫화면 CSS*/
+body{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
 
-/* 초기화면 버튼 CSS */
-.index-btn{width: 100%; height:150px; font-size: 2em; padding:15px 30px; border:3px solid RGB(251, 217, 20); background-color: transparent;
-color:RGB(251, 217, 20); letter-spacing: 6px; font-weight: bold; position: relative; transition: 0.6s; border-radius:25px 0 25px 0 ;
-overflow: hidden; font-family: 'GmarketSansMedium';} /* brfore을 자식으로 둘 수 있도록 relative 지정 노란 박스는 hidden 으로 안보이게 처리 */
+.first-main{
+    height: 100vh; display: flex; justify-content: center; align-items: center;
+}
 
-.index-btn:focus{outline: none;}
+.first-main>button{
+    font-size: 2.2rem; padding: 40px 60px; background:white; color:black; border: 3px solid black;
+    border-radius: 25px; letter-spacing: 3px; font-family:'GmarketSansMedium';
+}
 
-.index-btn::before{content: ""; position: absolute; height: 100%; width: 100%; background-color:RGB(251, 217, 20); 
-top:100%; left:0; transition: 0.6s; z-index:-1;} /*부모 요소를 main btn으로 지정(relative 지정) top, left0 으로 위치조절 ,, 하지만!! 아래에서 위로 박스를 올려야 하기 때문에 top100% */
+.first-main>button:hover{
+    background: black; color:white; animation:main-btn 3s ease-out infinite;
+}
 
-.index-btn:hover::before{transform: translateY(-100%);}
-
-.index-btn:hover{color:rgb(0, 88, 171);}/* 글씨가 안보이는 이유는 당연히 Z 문제 Z-index 조절//before에다가 인덱스 조절 */
-
-div button a{text-decoration: none; color: inherit; width: 100%; height: 100%; display: block; line-height: 120px;}
-/* 초기화면 버튼 CSS 종료*/
+@keyframes main-btn {
+    0%{background:white; color:black;}
+    50%{background: black; color:white;}
+    100%{background:white; color:black;}
+}
