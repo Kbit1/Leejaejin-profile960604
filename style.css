@@ -30,6 +30,11 @@ body *{list-style-type: none;
 /* main.html 시작 */
 
 /* login-wrap */
+
+a {text-decoration: none; color:initial;}
+a:hover {opacity: 0.5;
+    text-decoration: underline;}
+
 .login-wrap{
     display: flex;
     align-items: center; /* 수직 정렬을 위해 추가 */
@@ -38,15 +43,16 @@ body *{list-style-type: none;
     padding: 30px;
 }
 
-.login-wrap>div{
+.login-wrap>div{ 
     border-radius: 25px; background:#0076C0; color:white; padding: 13px; font-weight:bold ;
 }
 
-.login-wrap ul {
+.login-wrap ul { 
     display: flex; margin-left: 50px;
 }
 
-.login-wrap ul li{
+
+.login-wrap ul li{ 
     display: flex; margin-left: 55px; margin-right:20px;
 }
 
@@ -57,7 +63,7 @@ body *{list-style-type: none;
     width:200px; margin-left: 80px; float: left;
 }
 
-.menu-list{
+.menu-list{ font-family: 'GmarketSansMedium';
     display: flex;
 }
 
@@ -67,6 +73,9 @@ body *{list-style-type: none;
 
 .menu-list ul li{
     width: 100%;   margin: 50px 0 0 150px; font-size: 1.1rem;
+}
+.menu-list ul li:hover{
+    opacity: 0.5;
 }
 
 header div:nth-of-type(2) button{ 
@@ -105,15 +114,21 @@ header div:nth-of-type(2) button img{
     width: 100%; height: 70px; background: #0b34a7; display: flex;
 }
 
+.footer-color div:nth-of-type(2){
+    display: flex;  justify-content: space-around; margin-top: 30px;
+}
 
+.footer-color div:nth-of-type(2)
 
-
+/* footer Don'twithout it 부분 */
+.footer-color-bottom{display: flex;}
 .footer-color-bottom>div:nth-child(1){
     background: url(/img/footer-main-bottom1.avif)no-repeat center; width: 50%; height: 100px;
 }
 .footer-color-bottom>div:nth-child(2){
     background: url(/img/footer-main-bottom2.avif)no-repeat center; width: 50%; height: 100px;
 }
+/* footer Don'twithout it 부분 */
 
 
 .footer-information>div:nth-of-type(1){
@@ -123,12 +138,12 @@ header div:nth-of-type(2) button img{
 
 
 
-.footer-information>div:nth-of-type(2){display: flex;}
 
+/* footer logo , 정보 */
+.footer-information>div:nth-of-type(2){display: flex; margin: -50px 0 0 70px; gap: 30px;}
 
-.footer-information div:nth-of-type(3) ul{display: flex;}
 .one{
-    background: url(/img/youtube-icon.png)no-repeat center / cover; width: 80px; height: 80px;
+    background: url(/img/youtube-icon.png)no-repeat center / cover; width: 90px; height: 90px; margin-top:-15px;
 }
 .two{
     background: url(/img/x-icon.jpg)no-repeat center / cover; width:55px; height:55px;
@@ -137,3 +152,12 @@ header div:nth-of-type(2) button img{
     background: url(/img/insta-icon.png)no-repeat center / cover; width:55px; height:55px;
     border-radius: 50px;
 }
+
+.footer-information div:nth-of-type(3) ul{display: flex; gap: 50px; margin-left: 70px;}
+
+.footer-information div:nth-of-type(4) p {
+    margin: 20px 0 0 70px;
+}
+
+
+/* footer logo , 정보 */
