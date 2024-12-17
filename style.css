@@ -106,7 +106,7 @@ header div:nth-of-type(2) button img{
 }
 
 .footer-color>div:nth-of-type(1){
-    background:url(/img/footer-main-img.avif)no-repeat center top / cover; width:25%; height:150px;
+    background:url(./img/footer-main-img.avif)no-repeat center top / cover; width:25%; height:150px;
     margin-left:37%;
 }
 
@@ -123,16 +123,16 @@ header div:nth-of-type(2) button img{
 /* footer Don'twithout it 부분 */
 .footer-color-bottom{display: flex;}
 .footer-color-bottom>div:nth-child(1){
-    background: url(/img/footer-main-bottom1.avif)no-repeat center; width: 50%; height: 100px;
+    background: url(./img/footer-main-bottom1.avif)no-repeat center; width: 50%; height: 100px;
 }
 .footer-color-bottom>div:nth-child(2){
-    background: url(/img/footer-main-bottom2.avif)no-repeat center; width: 50%; height: 100px;
+    background: url(./img/footer-main-bottom2.avif)no-repeat center; width: 50%; height: 100px;
 }
 /* footer Don'twithout it 부분 */
 
 
 .footer-information>div:nth-of-type(1){
-    background: url(/img/footer-logo.svg)no-repeat center top; width: 400px; height: 100px;
+    background: url(./img/footer-logo.svg)no-repeat center top; width: 400px; height: 100px;
     margin-top: 180px;
 }
 
@@ -143,13 +143,13 @@ header div:nth-of-type(2) button img{
 .footer-information>div:nth-of-type(2){display: flex; margin: -50px 0 0 70px; gap: 30px;}
 
 .one{
-    background: url(/img/youtube-icon.png)no-repeat center / cover; width: 90px; height: 90px; margin-top:-15px;
+    background: url(./img/youtube-icon.png)no-repeat center / cover; width: 90px; height: 90px; margin-top:-15px;
 }
 .two{
-    background: url(/img/x-icon.jpg)no-repeat center / cover; width:55px; height:55px;
+    background: url(./img/x-icon.jpg)no-repeat center / cover; width:55px; height:55px;
 }
 .three{
-    background: url(/img/insta-icon.png)no-repeat center / cover; width:55px; height:55px;
+    background: url(./img/insta-icon.png)no-repeat center / cover; width:55px; height:55px;
     border-radius: 50px;
 }
 
