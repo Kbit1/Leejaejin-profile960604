@@ -1,1 +1,13 @@
+/* login.html 로그인 영역 */
+main section{
+    height: 700px;
+}
 
+#login-center{
+    border-radius: 25px; border: 2px solid #d9d9d9;  justify-content: center; width: 600px; height: 500px; display: flex;
+    margin: 0 auto;
+}
+
+#login-center ul{
+    display: flex; margin-top: 30px; 
+}
