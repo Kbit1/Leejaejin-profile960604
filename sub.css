@@ -4,10 +4,14 @@ main section{
 }
 
 #login-center{
-    border-radius: 25px; border: 2px solid #d9d9d9;  justify-content: center; width: 600px; height: 500px; display: flex;
-    margin: 0 auto;
+    border-radius: 25px; border: 2px solid #d9d9d9;  justify-content: center; width: 600px; height: 500px;
+    margin:75px 0 0 38%;
 }
 
 #login-center ul{
-    display: flex; margin-top: 30px; 
+    display: flex; margin:40px 0 0 20%; gap:45px;
+}
+
+#login-center ul li{
+    border-bottom: 2px solid black;
 }
