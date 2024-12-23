@@ -5,13 +5,33 @@ main section{
 
 #login-center{
     border-radius: 25px; border: 2px solid #d9d9d9;  justify-content: center; width: 600px; height: 500px;
-    margin:75px 0 0 38%;
+    margin:75px 0 0 38%; 
 }
 
 #login-center ul{
     display: flex; margin:40px 0 0 20%; gap:45px;
 }
 
-#login-center ul li{
-    border-bottom: 2px solid black;
+#login-center li:hover{
+    opacity: 0.6; cursor: pointer;
+}
+
+#login-center div:nth-of-type(1)>div{
+    background: url(./img/card-icon.jpg)no-repeat center top / cover;
+    width: 210px; height: 170px; margin: 0 auto;
+}
+
+#login-center div:nth-of-type(1) p {
+    text-align: center; font-family: 'GmarketSansMedium';
+}
+
+#login-center button {
+    background:#0076C0; color: white; border:none; width: 300px; height: 70px; border-radius: 15px;
+    margin:30px 0 0 25%;
+}
+
+#login-center div:nth-of-type(2){display: flex;}
+#login-center div:nth-of-type(2) p:nth-of-type(1){
+    background: url(./img/Security-icon.png)no-repeat center top / cover;
+    width: 50px; height: 50px; 
 }
