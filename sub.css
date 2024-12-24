@@ -5,7 +5,7 @@ main section{
 
 #login-center{
     border-radius: 25px; border: 2px solid #d9d9d9;  justify-content: center; width: 600px; height: 500px;
-    margin:75px 0 0 38%; 
+    margin:75px 0 0 38%;
 }
 
 #login-center ul{
@@ -30,8 +30,18 @@ main section{
     margin:30px 0 0 25%;
 }
 
-#login-center div:nth-of-type(2){display: flex;}
-#login-center div:nth-of-type(2) p:nth-of-type(1){
-    background: url(./img/Security-icon.png)no-repeat center top / cover;
-    width: 50px; height: 50px; 
+ /* 로그인 하단 이미지 */
+#login-center div:nth-of-type(2){
+    display: flex; justify-content: space-around;
+}
+
+#login-center div:nth-of-type(2) p{
+    font-size: 16px; margin-top: 30px;
+}
+
+#login-center div:nth-of-type(2) p>span{
+    position: relative;  top:-10px; left:10px;
+}
+
+#login-center div:nth-of-type(2) p img{ width: 33px; height: 33px;
 }
