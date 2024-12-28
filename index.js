@@ -1,23 +1,18 @@
-// index , button 클릭시 main으로 이동 //
-document.querySelector('.first-main button').addEventListener('click', function() {
+// 시작페이지 CSS 키프레임이 종료되면 홈페이지로 이동 //
+$('.first-bottom').on('animationend',function(){
     location.href = 'main.html';
 });
+// 시작페이지 CSS 키프레임이 종료되면 홈페이지로 이동 //
+
 // index , button 클릭시 main으로 이동 //
 
-let main_btn = document.querySelector(".first-main")
-
-main_btn.addEventListener("mousemove",function(e){
-    let x= e.offsetX
-    let y= e.offsetY
-    console.log(x,y);
-
-    // 임시대기 어지러움 let rotateY = 1/-5 * x + 20 ; 
-    document.querySelector(".first-main").style=`transform:rotateY(${rotateY}deg)`
-})
+//해당 코드는 카드를 보여주고 그 카드를 누르게되면 text변경을 을 해줄것인데 그 방법을 주석처리 해두었다/
 
 
+// console.log("-------------")
 
+// let car = ["소나타" , 50000 , "white"]
+// let car2 = {name:"소나타" , price:[50000,3000,4000] , color:"white"}
 
-// https://www.youtube.com/watch?v=YDCCauu4lIk 3분58초
-
-
+// $(".card span:eq(0)").text(car2.name)
+// $(".card span:eq(1)").text(car2.price[0])
