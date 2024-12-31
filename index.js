@@ -2,6 +2,27 @@
 $('.first-bottom').on('animationend',function(){
     location.href = 'main.html';
 });
+
+//main.html 카드 슬라이드//
+
+setInterval(function(){
+    $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){})
+},2000)
+setInterval(function(){
+    $(".main-card-img div:eq(1)").stop().fadeOut("normal",function(){})
+},4000)
+setInterval(function(){
+    $(".main-card-img div:eq(2)").stop().fadeOut("normal",function(){
+    })
+},6000)
+
+
+
+
+//main.html 카드 슬라이드//
+
+
+
 // 시작페이지 CSS 키프레임이 종료되면 홈페이지로 이동 //
 
 // index , button 클릭시 main으로 이동 //
@@ -16,3 +37,4 @@ $('.first-bottom').on('animationend',function(){
 
 // $(".card span:eq(0)").text(car2.name)
 // $(".card span:eq(1)").text(car2.price[0])
+
