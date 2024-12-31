@@ -5,17 +5,22 @@ $('.first-bottom').on('animationend',function(){
 
 //main.html 카드 슬라이드//
 
-setInterval(function(){
-    $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){})
-},2000)
-setInterval(function(){
-    $(".main-card-img div:eq(1)").stop().fadeOut("normal",function(){})
-},4000)
-setInterval(function(){
-    $(".main-card-img div:eq(2)").stop().fadeOut("normal",function(){
-    })
-},6000)
+// setInterval(function(){
+//     $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){})
+// },2000)
+// setInterval(function(){
+//     $(".main-card-img div:eq(1)").stop().fadeOut("normal",function(){})
+// },4000)
+// setInterval(function(){
+//     $(".main-card-img div:eq(2)").stop().fadeOut("normal",function(){
+//     })
+// },6000)
 
+setInterval(function(){
+    $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){
+        $(".main-card-img div:eq(0)").appendTo(".main-card-img").css({display:"block"})
+    })
+},2000)
 
 
 
