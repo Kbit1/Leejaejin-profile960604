@@ -3,24 +3,56 @@ $('.first-bottom').on('animationend',function(){
     location.href = 'main.html';
 });
 
-//main.html 카드 슬라이드//
+//main.html 카드 무한로딩//
 
-// setInterval(function(){
-//     $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){})
-// },2000)
-// setInterval(function(){
-//     $(".main-card-img div:eq(1)").stop().fadeOut("normal",function(){})
-// },4000)
-// setInterval(function(){
-//     $(".main-card-img div:eq(2)").stop().fadeOut("normal",function(){
-//     })
-// },6000)
-
+let count = 0;
 setInterval(function(){
-    $(".main-card-img div:eq(0)").stop().fadeOut("normal",function(){
-        $(".main-card-img div:eq(0)").appendTo(".main-card-img").css({display:"block"})
-    })
-},2000)
+    let silver = $(".main-card-img div:eq(0)")
+    let gold = $(".main-card-img div:eq(1)")
+    let green = $(".main-card-img div:eq(2)")
+    let black = $(".main-card-img div:eq(3)")
+
+    if(count==0){
+        silver.fadeOut(); black.fadeIn();
+        count = 1
+    } else if(count==1){
+        gold.fadeOut();
+        count = 2
+    } else if(count==2){
+        green.fadeOut();
+        count = 3
+    } else if(count==3){
+        black.fadeOut(); silver.fadeIn(); gold.fadeIn(); green.fadeIn();
+        count = 0
+    }
+},1000)
+
+
+//main.html 카드 무한로딩//
+
+// let reset = 0;
+// setInterval(function(){
+
+//     if (reset == 0) {
+//         $('.main-card-img div:nth-of-type(1)').fadeOut();
+//         let attr = $('.main-card-img div:nth-of-type(1)').attr('class');
+//         reset += parseInt(attr);
+//     } else if (reset == 1) {
+//         $('.main-card-img div:nth-of-type(2)').fadeOut();
+//         let attr = $('.main-card-img div:nth-of-type(2)').attr('class');
+//         reset += parseInt(attr);
+//     } else if (reset == 3) {
+//         $('.main-card-img div:nth-of-type(3)').fadeOut();
+//         $('.main-card-img div:nth-of-type(1)').fadeIn();
+//         $('.main-card-img div:nth-of-type(2)').fadeIn();
+//         $('.main-card-img div:nth-of-type(3)').fadeIn();
+//         reset = 0;
+//     }
+//     console.log(reset, '리셋')
+// },2000)
+
+
+
 
 
 
@@ -42,4 +74,6 @@ setInterval(function(){
 
 // $(".card span:eq(0)").text(car2.name)
 // $(".card span:eq(1)").text(car2.price[0])
+
+
 
