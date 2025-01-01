@@ -106,22 +106,30 @@ header div:nth-of-type(2) button img{
 
 .main-card-img div:nth-of-type(1){
     width:575px; height:365px;
-    background: url(./img/goldcard.png)no-repeat center/ cover; z-index:3;
+    background: url(./img/sliver-card.png)no-repeat center/ cover; z-index:4;
 }
 .main-card-img div:nth-of-type(2){
     width:575px; height:365px;
-    background: url(./img/greencard.png)no-repeat center/ cover; z-index:2;
+    background: url(./img/goldcard.png)no-repeat center/ cover; z-index:3;
 }
 .main-card-img div:nth-of-type(3){
     width:575px; height:365px;
-    background: url(./img/blackcard.png)no-repeat center/ cover; z-index:1;
+    background: url(./img/greencard.png)no-repeat center/ cover; z-index:2;
+}
+.main-card-img div:nth-of-type(4){
+    width:575px; height:365px;
+    background: url(./img/black-card.png)no-repeat center/ cover; z-index:1;
 }
 
 
+.main-btn-wrap{
+    display: flex; justify-content: center; margin:10px;
+}
 
 .main-btn-wrap div img{
-    width: 40px; height: 40px;
+    width: 40px; height: 40px; margin:0 15px 0 15px; cursor: pointer;
 }
+
 
 
 /* footer */
@@ -144,11 +152,14 @@ header div:nth-of-type(2) button img{
     width: 100%; height: 70px; background: #0b34a7; display: flex;
 }
 
-.footer-color div:nth-of-type(2){
-    display: flex;  justify-content: space-around; margin-top: 30px;
+.footer-p-img img{
+    width:120px; height: 120px; display:block; margin:0 auto; margin-top: 30px;
 }
 
-.footer-color div:nth-of-type(2)
+.footer-p-img{
+    display: flex;  justify-content: space-around; margin-top: 25px; font-family: 'GmarketSansMedium'; color:white; font-size: 1.2rem;
+}
+
 
 /* footer Don'twithout it 부분 */
 .footer-color-bottom{display: flex;}
