@@ -25,10 +25,35 @@ setInterval(function(){
         black.fadeOut(); silver.fadeIn(); gold.fadeIn(); green.fadeIn();
         count = 0
     }
-},1000)
-
-
+},2000)
 //main.html 카드 무한로딩//
+
+// login.html 앱다운로드 클릭시 변경 //
+$(".login-footer p:eq(2)").on("click",function(){
+    $(".login-change").children().not("div>div").fadeOut(function(){
+        $(".login-change-img").addClass("login-qr-show")
+        $(".login-change-img").removeClass("login-change-img")
+        $(".login-change p").remove()
+    });
+    
+});
+// login.html 앱다운로드 클릭시 변경 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let reset = 0;
 // setInterval(function(){
